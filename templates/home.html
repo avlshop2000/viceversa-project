@@ -6,13 +6,13 @@
 <body>
 	<h1>Vice Versa</h1>
 
-	<form action="textarea1.html" method="post">
+	<form action="{% url 'reverse' %}">
     
     <p><b>Введите вашу строку:</b></p>
     <p>
-    	<textarea rows="10" cols="45" name="text"></textarea>
+    	<textarea rows="10" cols="45" name="usertext"></textarea>
     </p>
-    <p><input type="submit" value="Отправить"></p>
+    <p><input type="submit" value="Перевернуть!"></p>
  	</form>
 
  	<p>Это тестовая страница!</p>
